@@ -16,10 +16,14 @@ const bg_color =
   3 : "aqua",
   4 : "white"
 }
-
+let  a = 0
 button.addEventListener("click" , function() {
-let a = Math.floor(Math.random() * 5)
+// let a = Math.floor(Math.random() * 5)
 document.body.style.backgroundColor = bg_color[a]
-
+a++
+if(a>4)
+{
+  a = 0
+}
 })
   
